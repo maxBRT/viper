@@ -2578,6 +2578,7 @@ func TestKeyDelimiter(t *testing.T) {
 
 		require.NoError(t, v.Unmarshal(&actual))
 
+        // It sets and unmarshals new values with the custom delimiter
 		assert.Equal(t, expected, actual)
 	})
 
