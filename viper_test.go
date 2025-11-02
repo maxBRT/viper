@@ -2595,6 +2595,7 @@ func TestKeyDelimiter(t *testing.T) {
 		got = v.Get("foo")
 		assert.Equal(t, want, got)
 
+		// Verify that setting a key ending with the delimiter does not create an empty key after the final character.
 		v.Set("baz", "Bazzz")
 		got = v.Get("baz")
 		want2 := "Bazzz"
