@@ -2556,6 +2556,7 @@ func TestKeyDelimiter(t *testing.T) {
 
 		v.SetDefault("charts::values", values)
 
+        // It retrieves existing values using the custom delimeter
 		assert.Equal(t, "leather", v.GetString("clothing::jacket"))
 		assert.Equal(t, "01/02/03", v.GetString("emails::steve@hacker.com::created"))
 
