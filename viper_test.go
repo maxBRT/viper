@@ -2641,7 +2641,7 @@ func TestKeyDelimiter(t *testing.T) {
 		shadow := make(map[string]bool)
 		shadow = v.flattenAndMergeMap(shadow, config, "")
 
-		assert.True(t, shadow["foozbar"])
+		assert.True(t, shadow["fooZbar"])
 		assert.True(t, shadow["foozbaz"])
 	})
 
